@@ -28,10 +28,6 @@ li .collectie a:hover {
 
 
 
-.Nav2 {
-  display: flex;
-}
-
 .Logozalando {
   flex: 33.33%;
   padding: 5px;
@@ -61,8 +57,6 @@ li .collectie a:hover {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-
 }
 
 #Icons {
@@ -71,4 +65,19 @@ li .collectie a:hover {
 }
 
 
+@media only screen and (max-width: 700px) {
+  .collectie {
+    display: none;
+  }
+  #Zalando {
+    position: absolute;
+    left: 4em;
+    top: 2em;
+  }
+  #Zoekbalk {
+    position: relative;
+    top: 2em;
+    left: 4em;
+  }
+}
 
