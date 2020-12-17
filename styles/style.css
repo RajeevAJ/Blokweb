@@ -51,6 +51,24 @@ li .collectie a:hover {
 
 } 
 
+#Topnavjes {
+  position: relative;
+}
+
+#Zalando {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+#Icons {
+  position: absolute;
+  right:0;
+}
 
 
 
