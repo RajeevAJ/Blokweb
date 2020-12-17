@@ -30,7 +30,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Ik heb eerst gekeken naar de navbar om te kijken hoe ver ik zou komen met de theorie. Ik ben lang bezig geweest met positioning. Ik merk nu dagt mijn css niet word gelezen in Gidhub. Ik zal vragen waarom.
 
 
 
@@ -63,6 +63,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
+
 
 
 

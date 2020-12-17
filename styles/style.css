@@ -17,22 +17,16 @@ li a {
   display: block;
   color: rgb(26, 26, 26);
   text-align: center;
-  padding: 14px 16px 0px 16px;
+  padding: 14px 16px 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+li .collectie a:hover {
   background-color: #111;
   color: white;
 }
 
-.Nav1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  
-}
+
 
 .Nav2 {
   display: flex;
@@ -47,7 +41,7 @@ li a:hover {
 .Icon {
   flex: 33.33%;
   padding: 5px;
-  max-width: 20px;
+  max-width: 10px;
 }
 
 
