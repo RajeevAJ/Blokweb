@@ -11,6 +11,99 @@ body {
   font-family: HelveticaNow,Helvetica,sans-serif;
 }
 
+/* FOOTER */
+
+footer
+{
+  background-color:#26272b;
+  
+  font-size:15px;
+  line-height:24px;
+  color:white;
+  height: 550px;
+  padding-top: 25px;
+}
+
+footer p {
+  margin-left: 15px;
+}
+footer ul {
+  column-count: 3;
+  column-width: 100px;
+  margin-left: 15px;
+  margin-top: 15px;
+
+}
+footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px;
+  padding: 10px;
+  width: 300px;
+}
+
+footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.foot {
+  padding: 0;
+  column-count: 3;
+  column-width: 100px;
+  text-align: left;
+  width: 150px;
+  
+}
+
+
+
+
+/* FOOTER */
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+.call {
+  font-weight: 550;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -.16px;
+
+  /* color: #fff; */
+}
+
+.call2 {
+  font-size: 16px;
+  font-weight: 150;
+  height: 40px;
+  width: 150px;
+  letter-spacing: -0.16px;
+  line-height: 24px;
+  padding: 15px;
+  margin-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 0;
+}
+
 .deal {
   text-size-adjust: 100%;
   font-family: Tiempos,Times New Roman,serif;
@@ -20,12 +113,32 @@ body {
   letter-spacing: -.32px;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: -.24px;
 }
 
 .wit {
   color: #fff;
+}
+
+.paars {
+  color: rgb(99, 40, 224);
+}
+
+.backpaars {
+  background-color: rgb(99, 40, 224);;
+}
+
+.zwart {
+  color: black;
+}
+
+.backwit {
+  background-color: white;
+}
+
+.backrood {
+  background-color: #B21418;
 }
 
 header {
@@ -55,6 +168,12 @@ li a  {
   text-decoration: none;
 }
 
+/* header ul:nth-child(1) li:nth-child(1), ul:nth-child(1) li:nth-child(1) {
+padding-left: 8px;
+} */
+
+
+
 li .collectie a:hover {
   background-color: #111;
   color: white;
@@ -65,7 +184,7 @@ li .collectie a:hover {
   color: white;
 }
 
-.collectie a {
+.collectie {
   font-size: 16px;
   font-weight: 700;
   padding-top: 10px;
@@ -74,23 +193,53 @@ li .collectie a:hover {
 }
 
 .collectie2 {
-  border-bottom: black;
-  border-bottom: 1px;
-}
-
-.collectie2 {
   font-size: 14px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.Logozalando {
+.collectie3 {
+  font-size: 12px;
+  position: relative;
+  padding-top: 25px;
+  padding-left: 0;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  /* scroll-padding-left: 32px; */
+  -webkit-overflow-scrolling: touch;
+
+  
+  padding-right: 0px;
+  
+  padding-bottom: 10px;
+   
+  
+}
+
+.collectie3 li {
+  padding-right: 30px;
+  padding-left: 0;
+  padding-top: 0px;
+  font-size: 14px;
+  font-weight: 530;
+  height: auto;
+  letter-spacing: -0.16px;
+  line-height: 24px;
+  display: inline-block;
+}
+
+/* .Logozalando {
   flex: 33.33%;
   padding: 5px;
   max-width: 120px;
-}
+} */
 
 .Icon {
   box-sizing: border-box;
@@ -103,14 +252,15 @@ li .collectie a:hover {
   position: relative;
   padding-top: 15px;
 }
-
-#Zalando {
-  margin: 0;
-  position: absolute;
-  padding-top: 12px;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media only screen and (max-width: 1080px) {
+  #Zalando {
+    margin: 0;
+    position: absolute;
+    padding-top: 12px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 #Icons {
@@ -135,18 +285,20 @@ padding-right: 0;
   border-bottom-color: rgb(208, 209, 211);
 }
 
-#Zoek #Zoekbalk {
-  padding: 6px;
-  background: #ddd;
-  border: none;
-  cursor: pointer;
-  scroll-margin: 0;
-}
+@media only screen and (min-width: 1080px) {
+  #Zoek #Zoekbalk {
+    padding: 6px;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    scroll-margin: 0;
+  }
 
-#Zoekbalk {
-  position: absolute;
-  right: 0;
-  width: 150px;
+  #Zoekbalk {
+    position: absolute;
+    right: 0;
+    width: 150px;
+  }
 }
 
 #Zoekbalk input {
@@ -166,37 +318,29 @@ padding-right: 0;
 input {
   border: none;
 }
-
-.Loop {
-  float: right;
-  padding-left: 5px;
-  max-width: 15px;
-}
-/* @media only screen and (max-width: 700px) {
-  .collectie {
+@media only screen and (min-width: 1080px) {
+  .Loop {
+    float: right;
+    padding-left: 5px;
+    max-width: 15px;
+  }
+  .Hamburger, #Hamburger {
     display: none;
   }
-  #Zalando {
-    position: absolute;
-    left: 4em;
-    top: 2em;
-  }
-  #Zoekbalk {
-    position: relative;
-    top: 2em;
-    left: 4em;
-    
-  }
-}
-*/
-
-.container {
   
-  background-color: #B21418;
-  left: 0px;
-  right: 0px;
-  width: auto;
+}
+.container {
   height: 300px;
+}
+
+
+
+.container2 {
+  background-color: rgb(108, 9, 8);
+}
+
+.container3 {
+  height: 550px;
 }
 
 .wrapper {
@@ -210,53 +354,141 @@ input {
   justify-content: space-between;
 }
 
+.slider {
+  display: flex;
+  overflow-x: auto;
+}
+
+.merk {
+  
+  color: rgb(26, 26, 26);
+  cursor: pointer;
+  
+  font-family: Tiempos, "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: 400;
+
+
+}
+ 
+.beschrijving {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 177px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+  color: rgb(26, 26, 26);
+  cursor: pointer;
+  font-family: HelveticaNow, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.new {
+  font-family: HelveticaNow, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(235, 0, 55);
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.old {
+  color: rgb(102, 103, 110);
+  cursor: pointer;
+  font-family: HelveticaNow, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration-line: line-through;
+}
+
 #seizoen-info {
   margin-top: 1.5rem;
   padding-top: 15px;
 }
 
+@media only screen and (min-width: 1080px) {
+  #seizoen-info {
+    display: inline;
+    width: 250px;
+  }
+  .box1 {
+    flex-direction: row;
+    width: 250px;
+  }
+}
+
 .Pijltje {
   padding-bottom: 0;
+  
+  width: 20px;
+}
+
+span {
+  position: relative;
+  top: 3px;
 }
 
 #placeholder{
-padding-bottom: 125px;
+padding-bottom: 127px;
+
 }
 
 
 a {
   text-decoration: none;
 }
-.call {
-  
-  
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: -.16px;
 
-  color: #fff;
-  
 
+/* @media only screen and (min-width: 1080px) { */
+  #kerst_item {
+    width: 350px;
+    object-fit: contain;
+    padding-top: 47px;
+    /* padding-right: 20px; */
+  }
+
+  .slider {
+    margin-top: 49px;
+  }
+/* } */
+
+.lievde {
+  position: relative;
+  border: 0;
+
+  left: 155px;
+  top: 50px;
+
+  padding-top: 5px;
 }
 
+#card-item {
+  
+  width: 177px;
+  height: 255.578px;
+  margin-right: 15px;
+}
 
-#kerst_item {
-  width: 350px;
-  object-fit: contain;
-  padding-top: 47px;
-  /* padding-right: 20px; */
+.slider {
+  margin-top: 49px;
+  margin-left: 10px;
+  width: 600px;
+  height: 400px;
 }
 
 .box {
-  width: 400px;
+  width: 800px;
   
 }
 
 .box1 {
-  
-  margin-left: 2%;
-  flex-grow: 0.5;
+  margin-top: 45px;
+  margin-right: 10;
+  flex-grow: 2;
   /* align-self: flex-end; */
   padding-bottom: 24px;
   
@@ -270,3 +502,149 @@ a {
   
 }
 
+header ul:nth-child(1) li:nth-child(2) {
+  /* background-color: brown; */
+}
+
+@media only screen and (max-width: 414px) {
+
+  .wrapper {
+    margin: 0px;
+  }
+  .collectie, .collectie2 {
+    display: none;
+  }
+  #Zalando {
+    left: 0px;
+    /* width: 299px; */
+    padding-left: 7em;
+  }
+
+  .Home {
+    width: 125px;
+    padding-top: 13px;
+    /* height: 30px; */
+   }
+  
+  #Icons {
+    position: relative;
+    padding-left: 200px;    
+  }
+
+  #Icon {
+    max-width: 30px;
+  }
+
+  .Loop {
+    width: 25px;
+    position: relative;
+    float: right;
+    left: 330px;
+    top: 12px;
+
+  }
+  .Hamburger {
+    display: run-in;
+    max-width: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px;
+  }
+  #Hamburger {
+    padding-top: 2.5px;
+    height: 47px;
+    border-bottom-width: 0;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 1.5px;
+    border-right-color: rgb(211, 211, 211);
+    background-color: transparent;
+  }
+  #streepje {
+    display: none;
+  }
+  #Zoek #Zoekbalk {
+    padding: 0px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    scroll-margin: 0;
+    height: 47px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: rgb(145, 145, 145);
+    border-right: 0px;
+    border-left: 0;
+    }
+  #Zoek {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  #Zoekbalk {
+    position: absolute;
+    left: 0;
+    width: 414px;
+    }
+
+    header {
+      margin-bottom: 13px;
+    }
+  .wrapper, .extra, .box {
+    width: 380px;
+  }
+  .box {
+    flex-direction: column;
+    
+  }
+
+  .collectie3 {
+    padding-top: 0;
+    width: 397px;
+    text-overflow:clip
+  }
+
+  .box1, .box2 {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+  }
+
+  #placeholder {
+    display: none;
+  }
+
+  #kerst_item {
+    position: relative;
+    padding-top: 20px;
+    width: 383px;
+    left: 15px;
+  }
+
+  #seizoen-info {
+    padding: 0px;
+  }
+  .call {
+    padding-top: 25px;
+  }
+  .call2 {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    
+  }
+  .deal {
+    font-weight: 50;
+  }
+  .container {
+    height: 430px;
+  }
+
+  .slider {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 398px;
+  }
+
+
+   
+}
