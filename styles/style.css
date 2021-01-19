@@ -11,7 +11,76 @@ body {
   font-family: HelveticaNow,Helvetica,sans-serif;
 }
 
+/* FOOTER */
 
+footer
+{
+  background-color:#26272b;
+  
+  font-size:15px;
+  line-height:24px;
+  color:white;
+  height: 550px;
+  padding-top: 25px;
+}
+
+footer p {
+  margin-left: 15px;
+}
+footer ul {
+  column-count: 3;
+  column-width: 100px;
+  margin-left: 15px;
+  margin-top: 15px;
+
+}
+footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px;
+  padding: 10px;
+  width: 300px;
+}
+
+footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.foot {
+  padding: 0;
+  column-count: 3;
+  column-width: 100px;
+  text-align: left;
+  width: 150px;
+  
+}
+
+
+
+
+/* FOOTER */
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
 
 .call {
   font-weight: 550;
@@ -54,6 +123,10 @@ body {
 
 .paars {
   color: rgb(99, 40, 224);
+}
+
+.backpaars {
+  background-color: rgb(99, 40, 224);;
 }
 
 .zwart {
@@ -132,6 +205,8 @@ li .collectie a:hover {
   position: relative;
   padding-top: 25px;
   padding-left: 0;
+  display: flex;
+  overflow-x: auto;
   scroll-behavior: smooth;
   overflow: hidden;
   overflow-x: scroll;
@@ -264,6 +339,10 @@ input {
   background-color: rgb(108, 9, 8);
 }
 
+.container3 {
+  height: 550px;
+}
+
 .wrapper {
   
   padding: 0 1rem;
@@ -354,7 +433,7 @@ span {
 }
 
 #placeholder{
-padding-bottom: 125px;
+padding-bottom: 127px;
 
 }
 
@@ -364,7 +443,7 @@ a {
 }
 
 
-@media only screen and (min-width: 1080px) {
+/* @media only screen and (min-width: 1080px) { */
   #kerst_item {
     width: 350px;
     object-fit: contain;
@@ -375,9 +454,20 @@ a {
   .slider {
     margin-top: 49px;
   }
+/* } */
+
+.lievde {
+  position: relative;
+  border: 0;
+
+  left: 155px;
+  top: 50px;
+
+  padding-top: 5px;
 }
 
 #card-item {
+  
   width: 177px;
   height: 255.578px;
   margin-right: 15px;
@@ -387,6 +477,7 @@ a {
   margin-top: 49px;
   margin-left: 10px;
   width: 600px;
+  height: 400px;
 }
 
 .box {
@@ -509,6 +600,8 @@ header ul:nth-child(1) li:nth-child(2) {
 
   .collectie3 {
     padding-top: 0;
+    width: 397px;
+    text-overflow:clip
   }
 
   .box1, .box2 {
@@ -522,8 +615,10 @@ header ul:nth-child(1) li:nth-child(2) {
   }
 
   #kerst_item {
+    position: relative;
     padding-top: 20px;
     width: 383px;
+    left: 15px;
   }
 
   #seizoen-info {
@@ -547,6 +642,7 @@ header ul:nth-child(1) li:nth-child(2) {
   .slider {
     margin-top: 10px;
     margin-left: 0;
+    width: 398px;
   }
 
 
