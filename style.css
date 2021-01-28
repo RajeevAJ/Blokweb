@@ -11,6 +11,20 @@ body {
   font-family: HelveticaNow,Helvetica,sans-serif;
 }
 
+h2 {
+  color: rgb(26, 26, 26);
+  
+  font-family: HelveticaNow, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+button:focus {
+  outline: 0;
+}
+
+
+
 /* FOOTER */
 
 footer
@@ -156,7 +170,7 @@ ul {
   padding-right: 0px;
 }
 
-li{
+header li{
   display:inline-block;
 }
 
@@ -341,6 +355,7 @@ input {
 
 .container3 {
   height: 550px;
+ 
 }
 
 .wrapper {
@@ -359,18 +374,47 @@ input {
   overflow-x: auto;
 }
 
+.sliderdetail {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+
+}
+
 .merk {
   
   color: rgb(26, 26, 26);
   cursor: pointer;
   
-  font-family: Tiempos, "Times New Roman", serif;
+  font-family: "Times New Roman", serif;
   font-size: 14px;
   font-weight: 400;
+}
 
-
+.merk-d {
+  
+  color: rgb(26, 26, 26);
+  cursor: pointer;
+  font-family: "Times New Roman", serif;
+  font-size: 21px;
+  font-weight: 400;
 }
  
+#disclaimer{
+  color: rgb(102, 103, 110);
+
+  font-family: HelveticaNow, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 20px;
+  letter-spacing: normal;
+
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-left: 8px;
+  margin-top: 0px;
+}
+
 .beschrijving {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -387,9 +431,32 @@ input {
   font-weight: 200;
 }
 
+.beschrijving-d {
+ 
+  white-space: nowrap;
+  width: 177px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+  color: rgb(26, 26, 26);
+  cursor: pointer;
+  font-family: HelveticaNow, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .new {
   font-family: HelveticaNow, Helvetica, sans-serif;
   font-size: 14px;
+  font-weight: 700;
+  color: rgb(235, 0, 55);
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.new-d {
+  font-family: HelveticaNow, Helvetica, sans-serif;
+  font-size: 20px;
   font-weight: 700;
   color: rgb(235, 0, 55);
   margin-right: 8px;
@@ -405,9 +472,24 @@ input {
   text-decoration-line: line-through;
 }
 
+.old-d {
+  color: rgb(102, 103, 110);
+  cursor: pointer;
+  font-family: HelveticaNow, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration-line: line-through;
+}
+
 #seizoen-info {
   margin-top: 1.5rem;
   padding-top: 15px;
+}
+
+.product-info {
+  width: 366px;
+  height: 201px;
+  line-height: 4;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -456,7 +538,7 @@ a {
   }
 /* } */
 
-.lievde {
+.liefde {
   position: relative;
   border: 0;
 
@@ -528,11 +610,15 @@ header ul:nth-child(1) li:nth-child(2) {
   
   #Icons {
     position: relative;
-    padding-left: 200px;    
+    left: 200px;    
   }
 
   #Icon {
     max-width: 30px;
+  }
+
+  #sterretjes {
+    width: 136px;
   }
 
   .Loop {
