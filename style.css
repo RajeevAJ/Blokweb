@@ -23,6 +23,74 @@ button:focus {
   outline: 0;
 }
 
+#bestel {
+  border-width: 0px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  
+  
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: rgb(26, 26, 26);
+
+  width: 381px;
+  height: 48px;
+  padding: 12px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#shipping li {
+  padding: 5px;
+}
+
+#ship-box1 {
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  font-size: 13px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+#ship-box2 {
+ 
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  font-size: 13px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+}
+
+#ship-box3 {
+  padding-bottom: 28px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  font-size: 13px;
+  border-width: 1px;
+  border-style: solid;
+  vertical-align: middle;
+}
+
+#retour, #inruil {
+  margin-top: -5px;
+  margin-bottom: -8px;
+  margin-right: 10px;
+}
+
+#info {
+  position: relative;
+  top: 11px;
+  left: 170px;
+}
 
 
 /* FOOTER */
@@ -378,6 +446,7 @@ input {
   display: flex;
   overflow-x: auto;
   width: 100%;
+  margin-bottom: 30px;
 
 }
 
@@ -501,6 +570,11 @@ input {
     flex-direction: row;
     width: 250px;
   }
+}
+
+#sterretjes {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .Pijltje {
@@ -703,7 +777,7 @@ header ul:nth-child(1) li:nth-child(2) {
   #kerst_item {
     position: relative;
     padding-top: 20px;
-    width: 383px;
+    width: 390px;
     left: 15px;
   }
 
@@ -733,4 +807,31 @@ header ul:nth-child(1) li:nth-child(2) {
 
 
    
+
+
+  /* Animation */
+
+  .liefde {
+    
+    animation: .8s infinite beatHeart;
+  }
+  
+  @keyframes beatHeart {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+/* Bron : https://codepen.io/aamnah/pen/WrVvEo */
 }
